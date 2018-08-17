@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="l:${list}">
+    <div th:text="${l.getUsername()}"></div>
+    <div th:text="${l.getEmail()}"></div>
+    <div th:text="${l.getTelephone()}"></div>
+</div>
+</body>
+</html>

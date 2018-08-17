@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+            <input  type="text" v-model="message" placeholder="消息"/>
+            <p>{{ message}}</p>
+            <p>{{ site }}</p>
+            <p>{{ url() }}</p>
+            <p>{{ created() }}</p>
+            <p>{{ $data }}</p>
+
+        </div>
+
+<script>
+
+    new Vue({
+        el:'#app',
+        data:{
+            message:'hello vue.js',
+            site: 'www.baidu.com'
+        },
+        methods:{
+            url : function () {
+                    return this.site+"github开源项目"
+            },
+            reverseMessage : function () {
+                return this.measure.split('').reverse().join('')
+            },
+            created:function () {
+                
+
+                console.log(this.$el);
+                console.log(this.message)
+
+            }
+        }
+    })
+
+</script>
+
+
+</body>
+</html>

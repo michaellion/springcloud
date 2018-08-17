@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id = 'app'>
+
+    {{ prices}}
+</div>
+
+<div id="app2">
+    {{ reverseTest }}
+
+</div>
+
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+
+            package:[
+                {
+                    name:'iphone7',
+                    price:1212,
+                    count:2
+                },
+                {
+                    name:'ipad',
+                    price:189,
+                    count:2
+                }
+            ],
+            package2:[
+                {
+                    name:'iphone7',
+                    price:1212,
+                    count:6
+                },
+                {
+                    name:'ipad',
+                    price:189,
+                    count:9
+                }
+            ],
+            text: '1234,5678'
+        },
+    computed:{
+        prices:function () {
+            var prices = 0;
+            for(var i =0;i<this.package.length;i++){
+                prices+=this.package[i].price* this.package[i].count;
+            }
+            for(var i =0;i<this.package2.length;i++){
+                prices+=this.package2[i].price* this.package2[i].count;
+            }
+            return prices
+        }
+    }
+
+    });
+    new Vue({
+        el:'#app2',
+        computed: {
+            reverseTest: function () {
+                return app.text.split(',').reverse().join('');
+
+            }
+        }
+    })
+
+
+
+</script>
+
+</body>
+</html>

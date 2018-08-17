@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-client" />
+        <module name="eureka-client2" />
+        <module name="eureka-server" />
+        <module name="eureka-server2" />
+        <module name="eureka-server3" />
+        <module name="feign" />
+        <module name="nginx1" />
+        <module name="nginx2" />
+        <module name="ribbon" />
+        <module name="security" />
+        <module name="service-zuul" />
+        <module name="upload" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="1.8" />
+      <module name="configclient" target="1.8" />
+      <module name="configserver" target="1.8" />
+      <module name="zipkin" target="1.8" />
+      <module name="zipkinserver" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

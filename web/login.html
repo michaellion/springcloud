@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id = "login">
+        <!--<label for="username">username</label>-->
+        <form action="#" method="post">
+            <input type="text" placeholder="用户名" v-model="username">
+            <p>{{username}}</p>
+            <input type="password" placeholder="密码" v-model="password">
+            <p>{{password}}</p>
+        <button v-on:click="login" />
+
+        </form>
+
+    </div>
+
+<script>
+    var login = new Vue({
+        el:"#login",
+        data:{
+            username:'',
+            password:''
+        },
+        methods:{
+            login:function () {
+
+            }
+        }
+    })
+
+
+
+</script>
+
+</body>
+</html>

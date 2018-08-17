@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="upload">上傳</a>
+<div th:each="l:${list}">
+    <div th:text="${l.getFilename()}" style="display:inline"></div>
+    <div th:text="${l.getFileType()}" style="display:inline"></div>
+    <div th:text="${l.getFileSize()}" style="display:inline"></div>
+    <div th:text="${l.getFile_url()}" style="display:inline"></div>
+    <div th:text="${l.getUserId()}" style="display:inline"></div>
+    <div
+</div>
+</body>
+</html>
