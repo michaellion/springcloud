@@ -10,7 +10,6 @@ public class Test{
      * @throws IOException
      * @throws InterruptedException
      */
-
     public static void main(String[] args) throws IOException, InterruptedException {  
         String lsSrcFile = "D:\\jdk-10.0.1_windows-x64_bin.exe";
         String lsDstDir = "D:\\tmp\\split";  
@@ -33,5 +32,4 @@ public class Test{
         }  
         System.out.println("done, spend " + (System.currentTimeMillis() - liStartTime) + " milsecs");  
     }  
-}  
-
+}
