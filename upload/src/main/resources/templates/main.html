@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
+    <script src="../static/js/main.js"></script>
+</head>
+<body>
+
+<div id="main">
+    <div id="head">
+        <p style="font-size: 50px">resources</p>
+
+    </div>
+
+    <div id="nav">
+
+    </div>
+
+    <div id="side">
+
+    </div>
+
+    <div id="mainframe">
+        <div th:each="l : ${lists}" style="width: 120px;height: 120px;float: left">
+            <div>
+                <img th:src="@{img/directory.png}" style="width: 100px"/>
+                <!-- <img src="../static/img/directory.png" style="width: 100px" />-->
+            </div>
+            <span th:text="${l.getFileName()}"> 文件名字 </span>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

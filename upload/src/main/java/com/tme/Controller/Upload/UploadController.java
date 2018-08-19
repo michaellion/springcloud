@@ -12,10 +12,10 @@ import java.io.*;
 @Controller
 public class UploadController {
 
-    @GetMapping( "/")
+  /*  @GetMapping( "/")
     public String page(){
         return "upload";
-    }
+    }*/
 
     /**
      *

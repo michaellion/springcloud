@@ -1,0 +1,33 @@
+#head {
+    height: 100px;
+    width: auto;
+    background-color: aquamarine;
+}
+
+#nav {
+    height: 50px;
+    width: auto;
+    background-color: blue;
+}
+
+#side {
+    height: 1000px;
+    width: 150px;
+    background-color: chartreuse;
+    /*    display: inline;*/
+    float: left;
+}
+
+#mainframe {
+    /*  display: inline;*/
+    height: 1000px;
+    width: auto;
+    float: left;
+
+}
+
+#single {
+    width: 120px;
+    height: 120px;
+
+}

@@ -5,14 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<a href="upload">上傳</a>
-<div th:each="l:${list}">
-    <div th:text="${l.getFilename()}" style="display:inline"></div>
-    <div th:text="${l.getFileType()}" style="display:inline"></div>
-    <div th:text="${l.getFileSize()}" style="display:inline"></div>
-    <div th:text="${l.getFile_url()}" style="display:inline"></div>
-    <div th:text="${l.getUserId()}" style="display:inline"></div>
-    <div
+<div th:each="l : ${lists}">
+    <span th:text="${l.getFileName()}"> 文件名字 </span>
+
 </div>
 </body>
 </html>
