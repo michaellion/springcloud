@@ -1197,6 +1197,7 @@
     <column id="297" parent="280" name="username">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="298" parent="280" name="password">
@@ -1204,30 +1205,39 @@
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="299" parent="280" name="PRIMARY">
+    <index id="299" parent="280" name="t_user_username_uindex">
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="300" parent="280" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="300" parent="281" name="id">
+    <key id="301" parent="280" name="t_user_username_uindex">
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>t_user_username_uindex</UnderlyingIndexName>
+    </key>
+    <column id="302" parent="281" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="281" name="userid">
+    <column id="303" parent="281" name="userid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="281" name="roleid">
+    <column id="304" parent="281" name="roleid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="303" parent="281" name="PRIMARY">
+    <key id="305" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
